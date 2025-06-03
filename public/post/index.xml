@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on My blog</title>
+    <link>http://localhost:1313/post/</link>
+    <description>Recent content in Posts on My blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 03 Apr 2025 13:55:35 +0800</lastBuildDate><atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blender tranpose any face obj to triangle face obj</title>
+      <link>http://localhost:1313/post/blender02/</link>
+      <pubDate>Thu, 03 Apr 2025 13:55:35 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/blender02/</guid>
+      
+        <description>&lt;p&gt;Blender如何将非三角形网格转换为三角网格。&lt;/p&gt;
+&lt;p&gt;在编辑模式下，按&lt;code&gt;A&lt;/code&gt;全选模型，按&lt;code&gt;Ctrl+T&lt;/code&gt;将网格转换为三角网格。&lt;/p&gt;
+&lt;p&gt;导出生成后的网格为OBJ文件即可。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Blender Draw Wireframe</title>
+      <link>http://localhost:1313/post/blender01/</link>
+      <pubDate>Wed, 02 Apr 2025 10:42:42 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/blender01/</guid>
+      
+        <description>How to user blender to render wireframe</description>
+      
+    </item>
+    
+  </channel>
+</rss>

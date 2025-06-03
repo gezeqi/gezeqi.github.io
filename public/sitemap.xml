@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url>
-    <loc>https://gezeqi.github.io/categories/</loc>
-  </url><url>
-    <loc>https://gezeqi.github.io/tags/</loc>
-  </url><url>
-    <loc>https://gezeqi.github.io/</loc>
-  </url>
-</urlset>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <sitemap>
+    <loc>https://gezeqi.github.io/en/sitemap.xml</loc>
+    
+      <lastmod>2025-05-24T21:34:57+08:00</lastmod>
+    
+  </sitemap>
+  
+  <sitemap>
+    <loc>https://gezeqi.github.io/cn/sitemap.xml</loc>
+    
+      <lastmod>2025-06-03T19:56:35+08:00</lastmod>
+    
+  </sitemap>
+  
+</sitemapindex>
