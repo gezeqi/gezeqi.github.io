@@ -1,0 +1,544 @@
+<!doctype html>
+<html
+  dir="ltr"
+  lang="cn"
+  data-theme=""
+  
+    class="html theme--light"
+  
+><head>
+  <meta charset="utf-8" />
+  <title>
+    Zeqi Ge
+        |
+        Git
+      
+
+    
+
+  </title>
+
+  <meta name="generator" content="Hugo 0.146.5"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="author" content="Zeqi Ge" />
+  <meta
+    name="description"
+    content="不要总沉迷过去，你要有新的生活。
+"
+  />
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/scss/main.min.8d4fad7e6916ad2e291e8d97ada157c70350d6d7150fea137e7243340967befb.css"
+      integrity="sha256-jU&#43;tfmkWrS4pHo2XraFXxwNQ1tcVD&#43;oTfnJDNAlnvvs="
+      crossorigin="anonymous"
+      type="text/css"
+    />
+  
+
+  
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.73ccfdf28df555e11009c13c20ced067af3cb021504cba43644c705930428b00.css"
+    integrity="sha256-c8z98o31VeEQCcE8IM7QZ688sCFQTLpDZExwWTBCiwA="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/fontawesome.min.137b1cf3cea9a8adb7884343a9a5ddddf4280f59153f74dc782fb7f7bf0d0519.css"
+    integrity="sha256-E3sc886pqK23iENDqaXd3fQoD1kVP3TceC&#43;3978NBRk="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/solid.min.e65dc5b48fb5f39b142360c57c3a215744c94e56c755c929cc3e88fe12aab4d3.css"
+    integrity="sha256-5l3FtI&#43;185sUI2DFfDohV0TJTlbHVckpzD6I/hKqtNM="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/regular.min.6f4f16d58da1c82c0c3a3436e021a3d39b4742f741192c546e73e947eacfd92f.css"
+    integrity="sha256-b08W1Y2hyCwMOjQ24CGj05tHQvdBGSxUbnPpR&#43;rP2S8="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/brands.min.e10425ad768bc98ff1fb272a0ac8420f9d1ba22f0612c08ff1010c95080ffe7e.css"
+    integrity="sha256-4QQlrXaLyY/x&#43;ycqCshCD50boi8GEsCP8QEMlQgP/n4="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+
+  <link rel="canonical" href="https://gezeqi.github.io/cn/posts/git/" />
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js"
+    integrity="sha256-&#43;RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI="
+    crossorigin="anonymous"
+  ></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.8724ddf9268dee451060f191961647573c7f592fbccc6d858746236b3f915813.js"
+      integrity="sha256-hyTd&#43;SaN7kUQYPGRlhZHVzx/WS&#43;8zG2Fh0Yjaz&#43;RWBM="
+      crossorigin="anonymous"
+    ></script>
+  
+
+  
+
+  
+
+  
+
+
+  
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Git">
+  <meta name="twitter:description" content="安装 下图为MacOS版本的Git官方网址的下载页面，可以看到有许多方法可以下载安装Git。
+方式1:如果需要在Mac上进行编程开发，最简单的方式便是通过下载Xcode来安装Git。 方式2:如果想要自定义安装，推荐使用Homebrew来安装Git。 配置 在终端中输入如下命令以配置用户名与邮箱：
+git config --global user.name &#34;gezeqi&#34; git config --global user.email &#34;ge051799qi@gmail.com&#34; 在终端中输入如下命令以查看配置列表：
+git config --list 生成SSH密钥 在终端中输入如下命令以生成SSH密钥：
+ssh-keygen -t ed25519 -C ge051799qi@gmail.com 如果不想过于复杂的操作，只需要不断回车完成即可。
+查看公钥 默认在用户名下生成一个.ssh文件夹，需要首先按command&#43;shift&#43;.以显示隐藏文件。
+Github中添加公钥 点击右上角头像–&gt;Settings–&gt;SSH and GPG keys，在SSH keys中点击&#34;New SSH key&#34;。
+在页面中输入对应内容，点击确认即完成配置。
+Title自取， Key type不变， Key则输入查看的公钥内容， 后续在终端中使用Git将会自动认证，而无需每次在弹出窗口中进行认证。">
+
+
+
+  
+  <meta property="og:url" content="https://gezeqi.github.io/cn/posts/git/">
+  <meta property="og:site_name" content="我的网站">
+  <meta property="og:title" content="Git">
+  <meta property="og:description" content="安装 下图为MacOS版本的Git官方网址的下载页面，可以看到有许多方法可以下载安装Git。
+方式1:如果需要在Mac上进行编程开发，最简单的方式便是通过下载Xcode来安装Git。 方式2:如果想要自定义安装，推荐使用Homebrew来安装Git。 配置 在终端中输入如下命令以配置用户名与邮箱：
+git config --global user.name &#34;gezeqi&#34; git config --global user.email &#34;ge051799qi@gmail.com&#34; 在终端中输入如下命令以查看配置列表：
+git config --list 生成SSH密钥 在终端中输入如下命令以生成SSH密钥：
+ssh-keygen -t ed25519 -C ge051799qi@gmail.com 如果不想过于复杂的操作，只需要不断回车完成即可。
+查看公钥 默认在用户名下生成一个.ssh文件夹，需要首先按command&#43;shift&#43;.以显示隐藏文件。
+Github中添加公钥 点击右上角头像–&gt;Settings–&gt;SSH and GPG keys，在SSH keys中点击&#34;New SSH key&#34;。
+在页面中输入对应内容，点击确认即完成配置。
+Title自取， Key type不变， Key则输入查看的公钥内容， 后续在终端中使用Git将会自动认证，而无需每次在弹出窗口中进行认证。">
+  <meta property="og:locale" content="cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-04-03T14:32:42+08:00">
+    <meta property="article:modified_time" content="2025-04-03T14:32:42+08:00">
+
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "posts",
+        "name": "Git",
+        "headline": "Git",
+        "alternativeHeadline": "",
+        "description": "
+      
+        \u003ch2 id=\u0022安装\u0022\u003e安装\u003c\/h2\u003e\n\u003cp\u003e下图为\u003ca href=\u0022https:\/\/git-scm.com\/downloads\/mac\u0022\u003eMacOS版本的Git官方网址的下载页面\u003c\/a\u003e，可以看到有许多方法可以下载安装Git。\u003c\/p\u003e\n\u003cul\u003e\n\u003cli\u003e方式1:如果需要在Mac上进行编程开发，最简单的方式便是通过下载Xcode来安装Git。\u003c\/li\u003e\n\u003cli\u003e方式2:如果想要自定义安装，推荐使用Homebrew来安装Git。\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003cp\u003e\u003cimg src=\u0022https:\/\/cdn.jsdelivr.net\/gh\/gezeqi\/Pictures@master\/uPic\/image-20250702100144766.png\u0022 alt=\u0022image-20250702100144766\u0022\u003e\u003c\/p\u003e\n\u003ch2 id=\u0022配置\u0022\u003e配置\u003c\/h2\u003e\n\u003cp\u003e在终端中输入如下命令以配置用户名与邮箱：\u003c\/p\u003e\n\u003cdiv class=\u0022highlight\u0022\u003e\u003cpre tabindex=\u00220\u0022 style=\u0022color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;\u0022\u003e\u003ccode class=\u0022language-sh\u0022 data-lang=\u0022sh\u0022\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003egit config --global user.name \u003cspan style=\u0022color:#e6db74\u0022\u003e\u0026#34;gezeqi\u0026#34;\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003egit config --global user.email \u003cspan style=\u0022color:#e6db74\u0022\u003e\u0026#34;ge051799qi@gmail.com\u0026#34;\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003c\/code\u003e\u003c\/pre\u003e\u003c\/div\u003e\u003cp\u003e\u003cimg src=\u0022https:\/\/cdn.jsdelivr.net\/gh\/gezeqi\/Pictures@master\/uPic\/image-20250702102610866.png\u0022 alt=\u0022image-20250702102610866\u0022\u003e\u003c\/p\u003e\n\u003cp\u003e在终端中输入如下命令以查看配置列表：\u003c\/p\u003e\n\u003cdiv class=\u0022highlight\u0022\u003e\u003cpre tabindex=\u00220\u0022 style=\u0022color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;\u0022\u003e\u003ccode class=\u0022language-sh\u0022 data-lang=\u0022sh\u0022\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003egit config --list\n\u003c\/span\u003e\u003c\/span\u003e\u003c\/code\u003e\u003c\/pre\u003e\u003c\/div\u003e\u003cp\u003e\u003cimg src=\u0022https:\/\/cdn.jsdelivr.net\/gh\/gezeqi\/Pictures@master\/uPic\/image-20250702102641855.png\u0022 alt=\u0022image-20250702102641855\u0022\u003e\u003c\/p\u003e\n\u003ch2 id=\u0022生成ssh密钥\u0022\u003e生成SSH密钥\u003c\/h2\u003e\n\u003cp\u003e在终端中输入如下命令以生成SSH密钥：\u003c\/p\u003e\n\u003cdiv class=\u0022highlight\u0022\u003e\u003cpre tabindex=\u00220\u0022 style=\u0022color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;\u0022\u003e\u003ccode class=\u0022language-sh\u0022 data-lang=\u0022sh\u0022\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003essh-keygen -t ed25519 -C ge051799qi@gmail.com\n\u003c\/span\u003e\u003c\/span\u003e\u003c\/code\u003e\u003c\/pre\u003e\u003c\/div\u003e\u003cp\u003e如果不想过于复杂的操作，只需要不断回车完成即可。\u003c\/p\u003e\n\u003cp\u003e\u003cimg src=\u0022https:\/\/cdn.jsdelivr.net\/gh\/gezeqi\/Pictures@master\/uPic\/image-20250702161157551.png\u0022 alt=\u0022image-20250702161157551\u0022\u003e\u003c\/p\u003e\n\u003ch2 id=\u0022查看公钥\u0022\u003e查看公钥\u003c\/h2\u003e\n\u003cp\u003e默认在用户名下生成一个.ssh文件夹，需要首先按\u003ccode\u003ecommand\u002bshift\u002b.\u003c\/code\u003e以显示隐藏文件。\u003c\/p\u003e\n\u003cp\u003e\u003cimg src=\u0022https:\/\/cdn.jsdelivr.net\/gh\/gezeqi\/Pictures@master\/uPic\/image-20250702163105828.png\u0022 alt=\u0022image-20250702163105828\u0022\u003e\u003c\/p\u003e\n\u003ch2 id=\u0022github中添加公钥\u0022\u003eGithub中添加公钥\u003c\/h2\u003e\n\u003cp\u003e点击右上角头像\u0026ndash;\u0026gt;Settings\u0026ndash;\u0026gt;SSH and GPG keys，在SSH keys中点击\u0026quot;New SSH key\u0026quot;。\u003c\/p\u003e\n\u003cp\u003e在页面中输入对应内容，点击确认即完成配置。\u003c\/p\u003e\n\u003cul\u003e\n\u003cli\u003eTitle自取，\u003c\/li\u003e\n\u003cli\u003eKey type不变，\u003c\/li\u003e\n\u003cli\u003eKey则输入查看的公钥内容，\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003cp\u003e\u003cimg src=\u0022https:\/\/cdn.jsdelivr.net\/gh\/gezeqi\/Pictures@master\/uPic\/image-20250702163952464.png\u0022 alt=\u0022image-20250702163952464\u0022\u003e\u003c\/p\u003e\n\u003cp\u003e后续在终端中使用Git将会自动认证，而无需每次在弹出窗口中进行认证。\u003c\/p\u003e
+
+
+      
+
+
+    ",
+        "license": "",
+        
+        "inLanguage": "cn",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/gezeqi.github.io\/cn\/posts\/git\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "Zeqi Ge"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "Zeqi Ge"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "Zeqi Ge"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "Zeqi Ge"
+        },
+        "dateCreated": "2025-04-03T14:32:42.00Z",
+        "datePublished": "2025-04-03T14:32:42.00Z",
+        "dateModified": "2025-04-03T14:32:42.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": "Zeqi Ge",
+            "url": "https://gezeqi.github.io/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/gezeqi.github.io\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+      ]
+
+    ,
+        "url" : "https:\/\/gezeqi.github.io\/cn\/posts\/git\/",
+        "wordCount" : "44",
+        "genre" : [ ],
+        "keywords" : [ ]
+    }
+  </script>
+
+
+</head>
+<body class="body">
+    <div class="wrapper">
+      <aside
+        
+          class="wrapper__sidebar"
+        
+      ><div
+  class="sidebar
+    animated fadeInDown
+  "
+>
+  <div class="sidebar__content">
+    <div class="sidebar__introduction">
+      <img
+        class="sidebar__introduction-profileimage"
+        src="/images/profile.jpg"
+        alt="profile picture"
+      />
+      
+        <div class="sidebar__introduction-title">
+          <a href="/cn">Zeqi Ge</a>
+        </div>
+      
+      <div class="sidebar__introduction-description">
+        <p>不要总沉迷过去，你要有新的生活。<br /></p>
+      </div>
+    </div>
+    <ul class="sidebar__list">
+      
+        <li class="sidebar__list-item">
+          <a
+            href="mailto:ge.zeqi@hdu.edu.cn"
+            target="_blank"
+            rel="noopener me"
+            aria-label="e-mail"
+            title="e-mail"
+          >
+            <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://github.com/gezeqi"
+            target="_blank"
+            rel="noopener me"
+            aria-label="GitHub"
+            title="GitHub"
+          >
+            <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://gitee.com/gezeqi"
+            target="_blank"
+            rel="noopener me"
+            aria-label="Gitee"
+            title="Gitee"
+          >
+            <i class="fab fa-github-alt fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://space.bilibili.com/479372308"
+            target="_blank"
+            rel="noopener me"
+            aria-label="Bilibili"
+            title="Bilibili"
+          >
+            <i class="fab fa-bilibili fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+    </ul>
+  </div><footer class="footer footer__sidebar">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        Zeqi Ge
+        2025
+      
+    </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
+    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    crossorigin="anonymous"
+  ></script></div>
+</aside>
+      <main
+        
+          class="wrapper__main"
+        
+      >
+        <header class="header"><div
+  class="
+    animated fadeInDown
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+  </a>
+  <nav class="nav">
+    <ul class="nav__list" id="navMenu">
+      
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/cn/"
+              
+              title=""
+              >主页</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/cn/portfolio/"
+              
+              title=""
+              >学术</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/cn/posts/"
+              
+              title=""
+              >博客</a
+            >
+          </li>
+        
+
+      
+        
+        
+
+          <li class="nav__list-item">
+            <div class="optionswitch">
+              <input class="optionswitch__picker" type="checkbox" id="3" hidden />
+
+              
+              
+                
+
+              
+                
+
+              
+
+
+              <label class="optionswitch__label" for="3"
+                >Accomplishments <i class="fa fa-angle-down" aria-hidden="true"></i
+              ></label>
+
+              <div class="optionswitch__triangle"></div>
+              <ul class="optionswitch__list">
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/awards/"
+                      
+                      title=""
+                      >Awards</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/certifications/"
+                      
+                      title=""
+                      >Certifications</a
+                    >
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/contact/"
+              
+              title=""
+              >Contact</a
+            >
+          </li>
+        
+
+      
+    </ul>
+    <ul class="nav__list nav__list--end">
+      
+      
+        <li class="nav__list-item">
+          <div class="themeswitch">
+            <a title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+        </li>
+      
+    </ul>
+  </nav>
+</div>
+</header>
+  <div
+    class="post 
+      animated fadeInDown
+    "
+  >
+    
+    <div class="post__content">
+      
+        <h1>Git</h1>
+      
+      <h2 id="安装">安装</h2>
+<p>下图为<a href="https://git-scm.com/downloads/mac">MacOS版本的Git官方网址的下载页面</a>，可以看到有许多方法可以下载安装Git。</p>
+<ul>
+<li>方式1:如果需要在Mac上进行编程开发，最简单的方式便是通过下载Xcode来安装Git。</li>
+<li>方式2:如果想要自定义安装，推荐使用Homebrew来安装Git。</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20250702100144766.png" alt="image-20250702100144766"></p>
+<h2 id="配置">配置</h2>
+<p>在终端中输入如下命令以配置用户名与邮箱：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git config --global user.name <span style="color:#e6db74">&#34;gezeqi&#34;</span>
+</span></span><span style="display:flex;"><span>git config --global user.email <span style="color:#e6db74">&#34;ge051799qi@gmail.com&#34;</span>
+</span></span></code></pre></div><p><img src="https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20250702102610866.png" alt="image-20250702102610866"></p>
+<p>在终端中输入如下命令以查看配置列表：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git config --list
+</span></span></code></pre></div><p><img src="https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20250702102641855.png" alt="image-20250702102641855"></p>
+<h2 id="生成ssh密钥">生成SSH密钥</h2>
+<p>在终端中输入如下命令以生成SSH密钥：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>ssh-keygen -t ed25519 -C ge051799qi@gmail.com
+</span></span></code></pre></div><p>如果不想过于复杂的操作，只需要不断回车完成即可。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20250702161157551.png" alt="image-20250702161157551"></p>
+<h2 id="查看公钥">查看公钥</h2>
+<p>默认在用户名下生成一个.ssh文件夹，需要首先按<code>command+shift+.</code>以显示隐藏文件。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20250702163105828.png" alt="image-20250702163105828"></p>
+<h2 id="github中添加公钥">Github中添加公钥</h2>
+<p>点击右上角头像&ndash;&gt;Settings&ndash;&gt;SSH and GPG keys，在SSH keys中点击&quot;New SSH key&quot;。</p>
+<p>在页面中输入对应内容，点击确认即完成配置。</p>
+<ul>
+<li>Title自取，</li>
+<li>Key type不变，</li>
+<li>Key则输入查看的公钥内容，</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20250702163952464.png" alt="image-20250702163952464"></p>
+<p>后续在终端中使用Git将会自动认证，而无需每次在弹出窗口中进行认证。</p>
+</div>
+    <div class="post__footer">
+      
+
+      
+    </div>
+
+    
+  </div>
+
+      </main>
+    </div><footer class="footer footer__base">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        Zeqi Ge
+        2025
+      
+    </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
+    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    crossorigin="anonymous"
+  ></script></body>
+</html>

@@ -7,5 +7,116 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>cn</language>
     <lastBuildDate>Wed, 02 Apr 2025 11:07:25 +0800</lastBuildDate><atom:link href="https://gezeqi.github.io/cn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo</title>
+      <link>https://gezeqi.github.io/cn/posts/hugo/</link>
+      <pubDate>Tue, 03 Jun 2025 19:56:35 +0800</pubDate>
+      
+      <guid>https://gezeqi.github.io/cn/posts/hugo/</guid>
+      
+        <description>&lt;h2 id=&#34;前置要求&#34;&gt;前置要求&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://golang.google.cn&#34;&gt;安装Golang&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://gohugo.io/installation/&#34;&gt;安装Hugo&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://git-scm.com&#34;&gt;安装Git&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;创建站点&#34;&gt;创建站点&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://gohugo.io/getting-started/quick-start/&#34;&gt;https://gohugo.io/getting-started/quick-start/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/lxndrblz/anatole&#34;&gt;https://github.com/lxndrblz/anatole&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/lxndrblz/anatole/wiki&#34;&gt;https://github.com/lxndrblz/anatole/wiki&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;创建新文件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo new content content/posts/my-first-post.md
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;启动服务&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo server
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;打包&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;打包完成后将其中的public文件夹和resources文件夹复制到github.io中即可。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>https://gezeqi.github.io/cn/posts/git/</link>
+      <pubDate>Thu, 03 Apr 2025 14:32:42 +0800</pubDate>
+      
+      <guid>https://gezeqi.github.io/cn/posts/git/</guid>
+      
+        <description>&lt;h2 id=&#34;安装&#34;&gt;安装&lt;/h2&gt;
+&lt;p&gt;下图为&lt;a href=&#34;https://git-scm.com/downloads/mac&#34;&gt;MacOS版本的Git官方网址的下载页面&lt;/a&gt;，可以看到有许多方法可以下载安装Git。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;方式1:如果需要在Mac上进行编程开发，最简单的方式便是通过下载Xcode来安装Git。&lt;/li&gt;
+&lt;li&gt;方式2:如果想要自定义安装，推荐使用Homebrew来安装Git。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20250702100144766.png&#34; alt=&#34;image-20250702100144766&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;配置&#34;&gt;配置&lt;/h2&gt;
+&lt;p&gt;在终端中输入如下命令以配置用户名与邮箱：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git config --global user.name &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;gezeqi&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git config --global user.email &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ge051799qi@gmail.com&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20250702102610866.png&#34; alt=&#34;image-20250702102610866&#34;&gt;&lt;/p&gt;
+&lt;p&gt;在终端中输入如下命令以查看配置列表：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git config --list
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20250702102641855.png&#34; alt=&#34;image-20250702102641855&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;生成ssh密钥&#34;&gt;生成SSH密钥&lt;/h2&gt;
+&lt;p&gt;在终端中输入如下命令以生成SSH密钥：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ssh-keygen -t ed25519 -C ge051799qi@gmail.com
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;如果不想过于复杂的操作，只需要不断回车完成即可。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20250702161157551.png&#34; alt=&#34;image-20250702161157551&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;查看公钥&#34;&gt;查看公钥&lt;/h2&gt;
+&lt;p&gt;默认在用户名下生成一个.ssh文件夹，需要首先按&lt;code&gt;command+shift+.&lt;/code&gt;以显示隐藏文件。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20250702163105828.png&#34; alt=&#34;image-20250702163105828&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;github中添加公钥&#34;&gt;Github中添加公钥&lt;/h2&gt;
+&lt;p&gt;点击右上角头像&amp;ndash;&amp;gt;Settings&amp;ndash;&amp;gt;SSH and GPG keys，在SSH keys中点击&amp;quot;New SSH key&amp;quot;。&lt;/p&gt;
+&lt;p&gt;在页面中输入对应内容，点击确认即完成配置。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Title自取，&lt;/li&gt;
+&lt;li&gt;Key type不变，&lt;/li&gt;
+&lt;li&gt;Key则输入查看的公钥内容，&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20250702163952464.png&#34; alt=&#34;image-20250702163952464&#34;&gt;&lt;/p&gt;
+&lt;p&gt;后续在终端中使用Git将会自动认证，而无需每次在弹出窗口中进行认证。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Homebrew</title>
+      <link>https://gezeqi.github.io/cn/posts/homebrew/</link>
+      <pubDate>Thu, 20 Mar 2025 10:48:16 +0800</pubDate>
+      
+      <guid>https://gezeqi.github.io/cn/posts/homebrew/</guid>
+      
+        <description>&lt;h2 id=&#34;安装&#34;&gt;安装&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://brew.sh&#34;&gt;Homebrew官网&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20250707172011460.png&#34; alt=&#34;image-20250707172011460&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;在终端中输入如下命令以下载Homebrew：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/bin/bash -c &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;配置环境变量&#34;&gt;配置环境变量&lt;/h2&gt;
+&lt;h3 id=&#34;方式一仅在当前终端中使用brew&#34;&gt;方式一：仅在当前终端中使用brew&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;在终端中输入如下命令以配置当前终端的环境变量。&lt;/li&gt;
+&lt;li&gt;但是关闭该终端窗口后或者使用别的终端窗口则无法使用brew。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;eval &amp;#34;$(/opt/homebrew/bin/brew shellenv)&amp;#34;&amp;#39;&lt;/span&gt; &amp;gt;&amp;gt; /Users/yourusername/.zprofile
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;eval &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;/opt/homebrew/bin/brew shellenv&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;方式二在全局环境中配置使用brew&#34;&gt;方式二：在全局环境中配置使用brew&lt;/h3&gt;
+&lt;p&gt;在终端中输入如下命令以修改&lt;code&gt;~/.zprofile&lt;/code&gt;：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;nano ~/.zprofile
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在使用vim模式在其中添加如下内容。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Added by zeqi&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;eval &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;/opt/homebrew/bin/brew shellenv&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在终端中输入如下命令以刷新环境变量：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;source ~/.zprofile
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在终端中输入如下命令以验证环境变量：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;brew --version
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      
+    </item>
+    
   </channel>
 </rss>
