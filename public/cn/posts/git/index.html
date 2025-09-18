@@ -6,7 +6,7 @@
   
     class="html theme--light"
   
-><head>
+><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
   <title>
     Zeqi Ge
@@ -85,7 +85,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
 
-  <link rel="canonical" href="https://gezeqi.github.io/cn/posts/git/" />
+  <link rel="canonical" href="http://localhost:1313/cn/posts/git/" />
   
   
   
@@ -127,12 +127,18 @@ ssh-keygen -t ed25519 -C ge051799qi@gmail.com 如果不想过于复杂的操作�
 查看公钥 默认在用户名下生成一个.ssh文件夹，需要首先按command&#43;shift&#43;.以显示隐藏文件。
 Github中添加公钥 点击右上角头像–&gt;Settings–&gt;SSH and GPG keys，在SSH keys中点击&#34;New SSH key&#34;。
 在页面中输入对应内容，点击确认即完成配置。
-Title自取， Key type不变， Key则输入查看的公钥内容， 后续在终端中使用Git将会自动认证，而无需每次在弹出窗口中进行认证。">
+Title自取， Key type不变， Key则输入查看的公钥内容， 后续在终端中使用Git将会自动认证，而无需每次在弹出窗口中进行认证。
+注意 Mac上Git已经设置了SSH连接，但是使用git push时仍然需要输入用户名和密码
+这可能是因为Git仓库远程URL仍然是HTTPS格式，Git会尝试使用HTTPS进行认证，而不是SSH。
+检查当前远程URL
+git remote -v 得到如下输出，这代表使用的是HTTPS格式。
+origin https://github.com/your-username/your-repo.git (fetch) origin https://github.com/your-username/your-repo.git (push) 更改远程URL为SSH
+git remote set-url origin git@github.com:your-username/your-repo.git 完成后可再次检查远程URL">
 
 
 
   
-  <meta property="og:url" content="https://gezeqi.github.io/cn/posts/git/">
+  <meta property="og:url" content="http://localhost:1313/cn/posts/git/">
   <meta property="og:site_name" content="我的网站">
   <meta property="og:title" content="Git">
   <meta property="og:description" content="安装 下图为MacOS版本的Git官方网址的下载页面，可以看到有许多方法可以下载安装Git。
@@ -143,7 +149,13 @@ ssh-keygen -t ed25519 -C ge051799qi@gmail.com 如果不想过于复杂的操作�
 查看公钥 默认在用户名下生成一个.ssh文件夹，需要首先按command&#43;shift&#43;.以显示隐藏文件。
 Github中添加公钥 点击右上角头像–&gt;Settings–&gt;SSH and GPG keys，在SSH keys中点击&#34;New SSH key&#34;。
 在页面中输入对应内容，点击确认即完成配置。
-Title自取， Key type不变， Key则输入查看的公钥内容， 后续在终端中使用Git将会自动认证，而无需每次在弹出窗口中进行认证。">
+Title自取， Key type不变， Key则输入查看的公钥内容， 后续在终端中使用Git将会自动认证，而无需每次在弹出窗口中进行认证。
+注意 Mac上Git已经设置了SSH连接，但是使用git push时仍然需要输入用户名和密码
+这可能是因为Git仓库远程URL仍然是HTTPS格式，Git会尝试使用HTTPS进行认证，而不是SSH。
+检查当前远程URL
+git remote -v 得到如下输出，这代表使用的是HTTPS格式。
+origin https://github.com/your-username/your-repo.git (fetch) origin https://github.com/your-username/your-repo.git (push) 更改远程URL为SSH
+git remote set-url origin git@github.com:your-username/your-repo.git 完成后可再次检查远程URL">
   <meta property="og:locale" content="cn">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -166,7 +178,7 @@ Title自取， Key type不变， Key则输入查看的公钥内容， 后续在�
         "alternativeHeadline": "",
         "description": "
       
-        \u003ch2 id=\u0022安装\u0022\u003e安装\u003c\/h2\u003e\n\u003cp\u003e下图为\u003ca href=\u0022https:\/\/git-scm.com\/downloads\/mac\u0022\u003eMacOS版本的Git官方网址的下载页面\u003c\/a\u003e，可以看到有许多方法可以下载安装Git。\u003c\/p\u003e\n\u003cul\u003e\n\u003cli\u003e方式1:如果需要在Mac上进行编程开发，最简单的方式便是通过下载Xcode来安装Git。\u003c\/li\u003e\n\u003cli\u003e方式2:如果想要自定义安装，推荐使用Homebrew来安装Git。\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003cp\u003e\u003cimg src=\u0022https:\/\/cdn.jsdelivr.net\/gh\/gezeqi\/Pictures@master\/uPic\/image-20250702100144766.png\u0022 alt=\u0022image-20250702100144766\u0022\u003e\u003c\/p\u003e\n\u003ch2 id=\u0022配置\u0022\u003e配置\u003c\/h2\u003e\n\u003cp\u003e在终端中输入如下命令以配置用户名与邮箱：\u003c\/p\u003e\n\u003cdiv class=\u0022highlight\u0022\u003e\u003cpre tabindex=\u00220\u0022 style=\u0022color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;\u0022\u003e\u003ccode class=\u0022language-sh\u0022 data-lang=\u0022sh\u0022\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003egit config --global user.name \u003cspan style=\u0022color:#e6db74\u0022\u003e\u0026#34;gezeqi\u0026#34;\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003egit config --global user.email \u003cspan style=\u0022color:#e6db74\u0022\u003e\u0026#34;ge051799qi@gmail.com\u0026#34;\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003c\/code\u003e\u003c\/pre\u003e\u003c\/div\u003e\u003cp\u003e\u003cimg src=\u0022https:\/\/cdn.jsdelivr.net\/gh\/gezeqi\/Pictures@master\/uPic\/image-20250702102610866.png\u0022 alt=\u0022image-20250702102610866\u0022\u003e\u003c\/p\u003e\n\u003cp\u003e在终端中输入如下命令以查看配置列表：\u003c\/p\u003e\n\u003cdiv class=\u0022highlight\u0022\u003e\u003cpre tabindex=\u00220\u0022 style=\u0022color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;\u0022\u003e\u003ccode class=\u0022language-sh\u0022 data-lang=\u0022sh\u0022\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003egit config --list\n\u003c\/span\u003e\u003c\/span\u003e\u003c\/code\u003e\u003c\/pre\u003e\u003c\/div\u003e\u003cp\u003e\u003cimg src=\u0022https:\/\/cdn.jsdelivr.net\/gh\/gezeqi\/Pictures@master\/uPic\/image-20250702102641855.png\u0022 alt=\u0022image-20250702102641855\u0022\u003e\u003c\/p\u003e\n\u003ch2 id=\u0022生成ssh密钥\u0022\u003e生成SSH密钥\u003c\/h2\u003e\n\u003cp\u003e在终端中输入如下命令以生成SSH密钥：\u003c\/p\u003e\n\u003cdiv class=\u0022highlight\u0022\u003e\u003cpre tabindex=\u00220\u0022 style=\u0022color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;\u0022\u003e\u003ccode class=\u0022language-sh\u0022 data-lang=\u0022sh\u0022\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003essh-keygen -t ed25519 -C ge051799qi@gmail.com\n\u003c\/span\u003e\u003c\/span\u003e\u003c\/code\u003e\u003c\/pre\u003e\u003c\/div\u003e\u003cp\u003e如果不想过于复杂的操作，只需要不断回车完成即可。\u003c\/p\u003e\n\u003cp\u003e\u003cimg src=\u0022https:\/\/cdn.jsdelivr.net\/gh\/gezeqi\/Pictures@master\/uPic\/image-20250702161157551.png\u0022 alt=\u0022image-20250702161157551\u0022\u003e\u003c\/p\u003e\n\u003ch2 id=\u0022查看公钥\u0022\u003e查看公钥\u003c\/h2\u003e\n\u003cp\u003e默认在用户名下生成一个.ssh文件夹，需要首先按\u003ccode\u003ecommand\u002bshift\u002b.\u003c\/code\u003e以显示隐藏文件。\u003c\/p\u003e\n\u003cp\u003e\u003cimg src=\u0022https:\/\/cdn.jsdelivr.net\/gh\/gezeqi\/Pictures@master\/uPic\/image-20250702163105828.png\u0022 alt=\u0022image-20250702163105828\u0022\u003e\u003c\/p\u003e\n\u003ch2 id=\u0022github中添加公钥\u0022\u003eGithub中添加公钥\u003c\/h2\u003e\n\u003cp\u003e点击右上角头像\u0026ndash;\u0026gt;Settings\u0026ndash;\u0026gt;SSH and GPG keys，在SSH keys中点击\u0026quot;New SSH key\u0026quot;。\u003c\/p\u003e\n\u003cp\u003e在页面中输入对应内容，点击确认即完成配置。\u003c\/p\u003e\n\u003cul\u003e\n\u003cli\u003eTitle自取，\u003c\/li\u003e\n\u003cli\u003eKey type不变，\u003c\/li\u003e\n\u003cli\u003eKey则输入查看的公钥内容，\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003cp\u003e\u003cimg src=\u0022https:\/\/cdn.jsdelivr.net\/gh\/gezeqi\/Pictures@master\/uPic\/image-20250702163952464.png\u0022 alt=\u0022image-20250702163952464\u0022\u003e\u003c\/p\u003e\n\u003cp\u003e后续在终端中使用Git将会自动认证，而无需每次在弹出窗口中进行认证。\u003c\/p\u003e
+        \u003ch2 id=\u0022安装\u0022\u003e安装\u003c\/h2\u003e\n\u003cp\u003e下图为\u003ca href=\u0022https:\/\/git-scm.com\/downloads\/mac\u0022\u003eMacOS版本的Git官方网址的下载页面\u003c\/a\u003e，可以看到有许多方法可以下载安装Git。\u003c\/p\u003e\n\u003cul\u003e\n\u003cli\u003e方式1:如果需要在Mac上进行编程开发，最简单的方式便是通过下载Xcode来安装Git。\u003c\/li\u003e\n\u003cli\u003e方式2:如果想要自定义安装，推荐使用Homebrew来安装Git。\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003cp\u003e\u003cimg src=\u0022https:\/\/cdn.jsdelivr.net\/gh\/gezeqi\/Pictures@master\/uPic\/image-20250702100144766.png\u0022 alt=\u0022image-20250702100144766\u0022\u003e\u003c\/p\u003e\n\u003ch2 id=\u0022配置\u0022\u003e配置\u003c\/h2\u003e\n\u003cp\u003e在终端中输入如下命令以配置用户名与邮箱：\u003c\/p\u003e\n\u003cdiv class=\u0022highlight\u0022\u003e\u003cpre tabindex=\u00220\u0022 style=\u0022color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;\u0022\u003e\u003ccode class=\u0022language-sh\u0022 data-lang=\u0022sh\u0022\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003egit config --global user.name \u003cspan style=\u0022color:#e6db74\u0022\u003e\u0026#34;gezeqi\u0026#34;\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003egit config --global user.email \u003cspan style=\u0022color:#e6db74\u0022\u003e\u0026#34;ge051799qi@gmail.com\u0026#34;\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003c\/code\u003e\u003c\/pre\u003e\u003c\/div\u003e\u003cp\u003e\u003cimg src=\u0022https:\/\/cdn.jsdelivr.net\/gh\/gezeqi\/Pictures@master\/uPic\/image-20250702102610866.png\u0022 alt=\u0022image-20250702102610866\u0022\u003e\u003c\/p\u003e\n\u003cp\u003e在终端中输入如下命令以查看配置列表：\u003c\/p\u003e\n\u003cdiv class=\u0022highlight\u0022\u003e\u003cpre tabindex=\u00220\u0022 style=\u0022color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;\u0022\u003e\u003ccode class=\u0022language-sh\u0022 data-lang=\u0022sh\u0022\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003egit config --list\n\u003c\/span\u003e\u003c\/span\u003e\u003c\/code\u003e\u003c\/pre\u003e\u003c\/div\u003e\u003cp\u003e\u003cimg src=\u0022https:\/\/cdn.jsdelivr.net\/gh\/gezeqi\/Pictures@master\/uPic\/image-20250702102641855.png\u0022 alt=\u0022image-20250702102641855\u0022\u003e\u003c\/p\u003e\n\u003ch2 id=\u0022生成ssh密钥\u0022\u003e生成SSH密钥\u003c\/h2\u003e\n\u003cp\u003e在终端中输入如下命令以生成SSH密钥：\u003c\/p\u003e\n\u003cdiv class=\u0022highlight\u0022\u003e\u003cpre tabindex=\u00220\u0022 style=\u0022color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;\u0022\u003e\u003ccode class=\u0022language-sh\u0022 data-lang=\u0022sh\u0022\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003essh-keygen -t ed25519 -C ge051799qi@gmail.com\n\u003c\/span\u003e\u003c\/span\u003e\u003c\/code\u003e\u003c\/pre\u003e\u003c\/div\u003e\u003cp\u003e如果不想过于复杂的操作，只需要不断回车完成即可。\u003c\/p\u003e\n\u003cp\u003e\u003cimg src=\u0022https:\/\/cdn.jsdelivr.net\/gh\/gezeqi\/Pictures@master\/uPic\/image-20250702161157551.png\u0022 alt=\u0022image-20250702161157551\u0022\u003e\u003c\/p\u003e\n\u003ch2 id=\u0022查看公钥\u0022\u003e查看公钥\u003c\/h2\u003e\n\u003cp\u003e默认在用户名下生成一个.ssh文件夹，需要首先按\u003ccode\u003ecommand\u002bshift\u002b.\u003c\/code\u003e以显示隐藏文件。\u003c\/p\u003e\n\u003cp\u003e\u003cimg src=\u0022https:\/\/cdn.jsdelivr.net\/gh\/gezeqi\/Pictures@master\/uPic\/image-20250702163105828.png\u0022 alt=\u0022image-20250702163105828\u0022\u003e\u003c\/p\u003e\n\u003ch2 id=\u0022github中添加公钥\u0022\u003eGithub中添加公钥\u003c\/h2\u003e\n\u003cp\u003e点击右上角头像\u0026ndash;\u0026gt;Settings\u0026ndash;\u0026gt;SSH and GPG keys，在SSH keys中点击\u0026quot;New SSH key\u0026quot;。\u003c\/p\u003e\n\u003cp\u003e在页面中输入对应内容，点击确认即完成配置。\u003c\/p\u003e\n\u003cul\u003e\n\u003cli\u003eTitle自取，\u003c\/li\u003e\n\u003cli\u003eKey type不变，\u003c\/li\u003e\n\u003cli\u003eKey则输入查看的公钥内容，\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003cp\u003e\u003cimg src=\u0022https:\/\/cdn.jsdelivr.net\/gh\/gezeqi\/Pictures@master\/uPic\/image-20250702163952464.png\u0022 alt=\u0022image-20250702163952464\u0022\u003e\u003c\/p\u003e\n\u003cp\u003e后续在终端中使用Git将会自动认证，而无需每次在弹出窗口中进行认证。\u003c\/p\u003e\n\u003ch2 id=\u0022注意\u0022\u003e注意\u003c\/h2\u003e\n\u003cp\u003eMac上Git已经设置了SSH连接，但是使用git push时仍然需要输入用户名和密码\u003c\/p\u003e\n\u003cp\u003e这可能是因为Git仓库远程URL仍然是HTTPS格式，Git会尝试使用HTTPS进行认证，而不是SSH。\u003c\/p\u003e\n\u003cp\u003e检查当前远程URL\u003c\/p\u003e\n\u003cdiv class=\u0022highlight\u0022\u003e\u003cpre tabindex=\u00220\u0022 style=\u0022color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;\u0022\u003e\u003ccode class=\u0022language-sh\u0022 data-lang=\u0022sh\u0022\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003egit remote -v\n\u003c\/span\u003e\u003c\/span\u003e\u003c\/code\u003e\u003c\/pre\u003e\u003c\/div\u003e\u003cp\u003e得到如下输出，这代表使用的是HTTPS格式。\u003c\/p\u003e\n\u003cdiv class=\u0022highlight\u0022\u003e\u003cpre tabindex=\u00220\u0022 style=\u0022color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;\u0022\u003e\u003ccode class=\u0022language-sh\u0022 data-lang=\u0022sh\u0022\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003eorigin  https:\/\/github.com\/your-username\/your-repo.git \u003cspan style=\u0022color:#f92672\u0022\u003e(\u003c\/span\u003efetch\u003cspan style=\u0022color:#f92672\u0022\u003e)\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003eorigin  https:\/\/github.com\/your-username\/your-repo.git \u003cspan style=\u0022color:#f92672\u0022\u003e(\u003c\/span\u003epush\u003cspan style=\u0022color:#f92672\u0022\u003e)\u003c\/span\u003e\n\u003c\/span\u003e\u003c\/span\u003e\u003c\/code\u003e\u003c\/pre\u003e\u003c\/div\u003e\u003cp\u003e更改远程URL为SSH\u003c\/p\u003e\n\u003cdiv class=\u0022highlight\u0022\u003e\u003cpre tabindex=\u00220\u0022 style=\u0022color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;\u0022\u003e\u003ccode class=\u0022language-sh\u0022 data-lang=\u0022sh\u0022\u003e\u003cspan style=\u0022display:flex;\u0022\u003e\u003cspan\u003egit remote set-url origin git@github.com:your-username\/your-repo.git\n\u003c\/span\u003e\u003c\/span\u003e\u003c\/code\u003e\u003c\/pre\u003e\u003c\/div\u003e\u003cp\u003e完成后可再次检查远程URL\u003c\/p\u003e
 
 
       
@@ -179,7 +191,7 @@ Title自取， Key type不变， Key则输入查看的公钥内容， 后续在�
         "isFamilyFriendly": "true",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https:\/\/gezeqi.github.io\/cn\/posts\/git\/"
+            "@id": "http:\/\/localhost:1313\/cn\/posts\/git\/"
         },
         "author" : {
             "@type": "Person",
@@ -203,10 +215,10 @@ Title自取， Key type不变， Key则输入查看的公钥内容， 后续在�
         "publisher":{
             "@type":"Organization",
             "name": "Zeqi Ge",
-            "url": "https://gezeqi.github.io/",
+            "url": "http://localhost:1313/",
             "logo": {
                 "@type": "ImageObject",
-                "url": "https:\/\/gezeqi.github.io\/favicon-32x32.png",
+                "url": "http:\/\/localhost:1313\/favicon-32x32.png",
                 "width":"32",
                 "height":"32"
             }
@@ -216,8 +228,8 @@ Title自取， Key type不变， Key则输入查看的公钥内容， 后续在�
       ]
 
     ,
-        "url" : "https:\/\/gezeqi.github.io\/cn\/posts\/git\/",
-        "wordCount" : "44",
+        "url" : "http:\/\/localhost:1313\/cn\/posts\/git\/",
+        "wordCount" : "66",
         "genre" : [ ],
         "keywords" : [ ]
     }
@@ -240,7 +252,7 @@ Title自取， Key type不变， Key则输入查看的公钥内容， 后续在�
     <div class="sidebar__introduction">
       <img
         class="sidebar__introduction-profileimage"
-        src="/images/profile.jpg"
+        src="/images/profile.png"
         alt="profile picture"
       />
       
@@ -511,6 +523,17 @@ Title自取， Key type不变， Key则输入查看的公钥内容， 后续在�
 </ul>
 <p><img src="https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20250702163952464.png" alt="image-20250702163952464"></p>
 <p>后续在终端中使用Git将会自动认证，而无需每次在弹出窗口中进行认证。</p>
+<h2 id="注意">注意</h2>
+<p>Mac上Git已经设置了SSH连接，但是使用git push时仍然需要输入用户名和密码</p>
+<p>这可能是因为Git仓库远程URL仍然是HTTPS格式，Git会尝试使用HTTPS进行认证，而不是SSH。</p>
+<p>检查当前远程URL</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git remote -v
+</span></span></code></pre></div><p>得到如下输出，这代表使用的是HTTPS格式。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>origin  https://github.com/your-username/your-repo.git <span style="color:#f92672">(</span>fetch<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>origin  https://github.com/your-username/your-repo.git <span style="color:#f92672">(</span>push<span style="color:#f92672">)</span>
+</span></span></code></pre></div><p>更改远程URL为SSH</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git remote set-url origin git@github.com:your-username/your-repo.git
+</span></span></code></pre></div><p>完成后可再次检查远程URL</p>
 </div>
     <div class="post__footer">
       
