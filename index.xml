@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on My blog</title>
+    <link>https://gezeqi.github.io/</link>
+    <description>Recent content in Home on My blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 02 Apr 2025 11:07:25 +0800</lastBuildDate><atom:link href="https://gezeqi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Notice</title>
+      <link>https://gezeqi.github.io/posts/notice/</link>
+      <pubDate>Sun, 20 Jul 2025 15:49:51 +0200</pubDate>
+      
+      <guid>https://gezeqi.github.io/posts/notice/</guid>
+      
+        <description>&lt;p&gt;To everyone,&lt;/p&gt;
+&lt;p&gt;All notes are written in Chinese only, and the English version will be improved later.&lt;/p&gt;
+&lt;p&gt;If you want to continue viewing, please move to the Chinese version.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Test01</title>
+      <link>https://gezeqi.github.io/awards/</link>
+      <pubDate>Thu, 03 Apr 2025 14:03:37 +0800</pubDate>
+      
+      <guid>https://gezeqi.github.io/awards/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications on My blog</title>
+    <link>https://gezeqi.github.io/portfolio/</link>
+    <description>Recent content in Publications on My blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 24 May 2025 21:34:57 +0800</lastBuildDate><atom:link href="https://gezeqi.github.io/portfolio/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
