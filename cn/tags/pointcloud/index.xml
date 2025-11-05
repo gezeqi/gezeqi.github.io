@@ -9,12 +9,119 @@
     <lastBuildDate>Sun, 20 Jul 2025 16:21:26 +0200</lastBuildDate><atom:link href="https://gezeqi.github.io/cn/tags/pointcloud/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blender渲染点云</title>
-      <link>https://gezeqi.github.io/cn/posts/blender_pointcloud/</link>
+      <link>https://gezeqi.github.io/cn/blogs/blender_pointcloud/</link>
       <pubDate>Sun, 20 Jul 2025 16:21:26 +0200</pubDate>
       
-      <guid>https://gezeqi.github.io/cn/posts/blender_pointcloud/</guid>
+      <guid>https://gezeqi.github.io/cn/blogs/blender_pointcloud/</guid>
       
-        <description>&lt;p&gt;TODO&lt;/p&gt;</description>
+        <description>&lt;h2 id=&#34;打开blender&#34;&gt;打开Blender&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;打开Blender：打开后界面如下所示。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20251105111111745.png&#34; alt=&#34;image-20251105111111745&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;隐藏欢迎弹窗：按&lt;code&gt;ESC&lt;/code&gt;键或任意单击弹窗外侧。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20251105111134383.png&#34; alt=&#34;image-20251105111134383&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;导入线框模型&#34;&gt;导入线框模型&lt;/h2&gt;
+&lt;p&gt;注：此处直接使用默认模型，自定义时应按照下述步骤删除默认模型后导入实际模型。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;删除默认模型：选中模型（选中后边缘为橙色），按&lt;code&gt;X&lt;/code&gt;键弹出窗口后确认删除。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20251105111257420.png&#34; alt=&#34;image-20251105111257420&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;导入实际模型：&lt;code&gt;文件&lt;/code&gt;&amp;mdash;&amp;gt;&lt;code&gt;导入&lt;/code&gt;&amp;mdash;&amp;gt;&lt;code&gt;Wavefront(.obj)&lt;/code&gt;，选择要导入的模型（一般以obj文件）。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20251105111341151.png&#34; alt=&#34;image-20251105111341151&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;创建几何节点&#34;&gt;创建几何节点&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;打开&lt;code&gt;修改器&lt;/code&gt;：确保选中当前模型，在右侧下方面板点击&lt;code&gt;修改器&lt;/code&gt;。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20251105112029999.png&#34; alt=&#34;image-20251105112029999&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;添加&lt;code&gt;几何节点修改器&lt;/code&gt;：&lt;code&gt;添加修改器&lt;/code&gt;&amp;mdash;&amp;gt;&lt;code&gt;几何节点&lt;/code&gt;。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20251105112128134.png&#34; alt=&#34;image-20251105112128134&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;切换到&lt;code&gt;几何节点&lt;/code&gt;窗口。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20251105112313636.png&#34; alt=&#34;image-20251105112313636&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;新建几何节点：点击&lt;code&gt;新建&lt;/code&gt;（两处随便点击一处即可）。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20251105112420539.png&#34; alt=&#34;image-20251105112420539&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;方法一&#34;&gt;方法一&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;Shift+A&lt;/code&gt;：&lt;code&gt;网格&lt;/code&gt;&amp;mdash;&amp;gt;&lt;code&gt;操作&lt;/code&gt;&amp;mdash;&amp;gt;&lt;code&gt;网格转换为点&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20251105125339323.png&#34; alt=&#34;image-20251105125339323&#34;&gt;&lt;/p&gt;
+&lt;p&gt;将&lt;code&gt;网格转换为点&lt;/code&gt;节点置于&lt;code&gt;组输入&lt;/code&gt;与&lt;code&gt;组输出&lt;/code&gt;之间，它将自动连接起来，此时导入模型变为顶点集。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20251105125545868.png&#34; alt=&#34;image-20251105125545868&#34;&gt;&lt;/p&gt;
+&lt;p&gt;注：方法一所生成的点，其形状为类似菱形。因此更多时候可以选择方法二生成自定义形状的点。&lt;/p&gt;
+&lt;h3 id=&#34;方法二&#34;&gt;方法二&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;Shift+A&lt;/code&gt;：&lt;code&gt;实例&lt;/code&gt;&amp;mdash;&amp;gt;&lt;code&gt;实例化于点上&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20251105130017150.png&#34; alt=&#34;image-20251105130017150&#34;&gt;&lt;/p&gt;
+&lt;p&gt;将&lt;code&gt;实例化于点上&lt;/code&gt;节点置于&lt;code&gt;组输入&lt;/code&gt;与&lt;code&gt;组输出&lt;/code&gt;之间，它将自动连接起来，此时导入模型将消失。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20251105130059385.png&#34; alt=&#34;image-20251105130059385&#34;&gt;&lt;/p&gt;
+&lt;p&gt;复制粘贴进来自定义的物体&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20251105130811966.png&#34; alt=&#34;image-20251105130811966&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Shift+A&lt;/code&gt;：&lt;code&gt;输入&lt;/code&gt;&amp;mdash;&amp;gt;&lt;code&gt;场景&lt;/code&gt;&amp;mdash;&amp;gt;&lt;code&gt;物体信息&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20251105130921097.png&#34; alt=&#34;image-20251105130921097&#34;&gt;&lt;/p&gt;
+&lt;p&gt;调整&lt;code&gt;物体信息&lt;/code&gt;节点：首先选择导入的实例，并将&lt;code&gt;物体信息&lt;/code&gt;节点的&lt;code&gt;几何数据&lt;/code&gt;连接到&lt;code&gt;实例化于点上&lt;/code&gt;节点的&lt;code&gt;实例&lt;/code&gt;，则所有顶点均显示为实例的模样。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20251105131218148.png&#34; alt=&#34;image-20251105131218148&#34;&gt;&lt;/p&gt;
+&lt;p&gt;点击显示按钮和渲染按钮以隐藏导入的实例，使得其不被显示和渲染。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20251105133543114.png&#34; alt=&#34;image-20251105133543114&#34;&gt;&lt;/p&gt;
+&lt;p&gt;注：如果对实例的大小有要求，可以通过&lt;code&gt;实例化于点上&lt;/code&gt;节点的&lt;code&gt;旋转&lt;/code&gt;与&lt;code&gt;缩放&lt;/code&gt;进行调整。&lt;/p&gt;
+&lt;h2 id=&#34;材质&#34;&gt;材质&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;打开&lt;code&gt;材质&lt;/code&gt;：在右侧下方面板点击&lt;code&gt;材质&lt;/code&gt;。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20251105131642210.png&#34; alt=&#34;image-20251105131642210&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;调整&lt;code&gt;基础色&lt;/code&gt;：点击&lt;code&gt;基础色&lt;/code&gt;靠右侧的颜色区域，在弹出窗口中选择特定颜色。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20251105131722832.png&#34; alt=&#34;image-20251105131722832&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;切换到&lt;code&gt;渲染模式&lt;/code&gt;：按住&lt;code&gt;Z&lt;/code&gt;键，通过移动鼠标&lt;code&gt;渲染模式&lt;/code&gt;并点击左键切换。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20251105131816828.png&#34; alt=&#34;image-20251105131816828&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;添加&lt;code&gt;材质&lt;/code&gt;：&lt;code&gt;Shift+A&lt;/code&gt;&amp;mdash;&amp;gt;&lt;code&gt;材质&lt;/code&gt;&amp;mdash;&amp;gt;&lt;code&gt;设置材质&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20251105131923876.png&#34; alt=&#34;image-20251105131923876&#34;&gt;&lt;/p&gt;
+&lt;p&gt;将&lt;code&gt;设置材质&lt;/code&gt;节点添加到&lt;code&gt;实例化于点上&lt;/code&gt;节点与&lt;code&gt;组输出&lt;/code&gt;的中间，并选择指定的材质，则所有顶点均显示为对应材质。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20251105132054305.png&#34; alt=&#34;image-20251105132054305&#34;&gt;&lt;/p&gt;
+&lt;p&gt;注：如果对顶点的颜色不满意，可以在&lt;code&gt;渲染模式&lt;/code&gt;下继续调整&lt;code&gt;基础色&lt;/code&gt;。&lt;/p&gt;
+&lt;h2 id=&#34;调整世界环境&#34;&gt;调整世界环境&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;打开&lt;code&gt;世界环境&lt;/code&gt;：在右侧下方面板点击&lt;code&gt;世界环境&lt;/code&gt;。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20251105132400767.png&#34; alt=&#34;image-20251105132400767&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;调整&lt;code&gt;颜色&lt;/code&gt;：点击&lt;code&gt;颜色&lt;/code&gt;靠右侧的颜色区域，在弹出窗口中选择特定颜色。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20251105132450620.png&#34; alt=&#34;image-20251105132450620&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;为确保渲染效果，应该将背景调整为尽可能纯白，效果如下所示。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20251105132529672.png&#34; alt=&#34;image-20251105132529672&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;调整渲染&#34;&gt;调整渲染&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;打开&lt;code&gt;渲染&lt;/code&gt;：在右侧下方面板点击&lt;code&gt;渲染&lt;/code&gt;。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20251105132551412.png&#34; alt=&#34;image-20251105132551412&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;调整&lt;code&gt;胶底&lt;/code&gt;为&lt;code&gt;透明&lt;/code&gt;：找到&lt;code&gt;胶底&lt;/code&gt;，勾选&lt;code&gt;透明&lt;/code&gt;，勾选后将会立刻改变其背景。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20251105132643758.png&#34; alt=&#34;image-20251105132643758&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20251105132711385.png&#34; alt=&#34;image-20251105132711385&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;调整&lt;code&gt;渲染引擎&lt;/code&gt;：将&lt;code&gt;EEVEE&lt;/code&gt;更改为&lt;code&gt;Cycles&lt;/code&gt;。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20251105132732974.png&#34; alt=&#34;image-20251105132732974&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;导出点云图&#34;&gt;导出点云图&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;渲染图像：直接按&lt;code&gt;F12&lt;/code&gt;键或者点击&lt;code&gt;渲染&lt;/code&gt;&amp;mdash;&amp;gt;&lt;code&gt;渲染图像&lt;/code&gt;。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20251105132900734.png&#34; alt=&#34;image-20251105132900734&#34;&gt;&lt;/p&gt;</description>
       
     </item>
     

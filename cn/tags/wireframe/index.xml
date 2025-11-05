@@ -9,10 +9,10 @@
     <lastBuildDate>Sat, 19 Jul 2025 19:01:30 +0200</lastBuildDate><atom:link href="https://gezeqi.github.io/cn/tags/wireframe/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blender渲染线框</title>
-      <link>https://gezeqi.github.io/cn/posts/blender_wireframe/</link>
+      <link>https://gezeqi.github.io/cn/blogs/blender_wireframe/</link>
       <pubDate>Sat, 19 Jul 2025 19:01:30 +0200</pubDate>
       
-      <guid>https://gezeqi.github.io/cn/posts/blender_wireframe/</guid>
+      <guid>https://gezeqi.github.io/cn/blogs/blender_wireframe/</guid>
       
         <description>&lt;h2 id=&#34;打开blender&#34;&gt;打开Blender&lt;/h2&gt;
 &lt;ol&gt;
@@ -23,7 +23,7 @@
 &lt;li&gt;隐藏欢迎弹窗：按&lt;code&gt;ESC&lt;/code&gt;键或任意单击弹窗外侧。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20250720110701311.png&#34; alt=&#34;image-20250720110701311&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;导入线框模型&#34;&gt;导入线框模型&lt;/h2&gt;
+&lt;h2 id=&#34;导入模型&#34;&gt;导入模型&lt;/h2&gt;
 &lt;p&gt;注：此处直接使用默认模型，自定义时应按照下述步骤删除默认模型后导入实际模型。&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;删除默认模型：选中模型（选中后边缘为橙色），按&lt;code&gt;X&lt;/code&gt;键弹出窗口后确认删除。&lt;/li&gt;
