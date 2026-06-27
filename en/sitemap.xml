@@ -2,19 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://gezeqi.github.io/cv/</loc>
-    <lastmod>2025-11-05T14:50:02+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="cn"
-                href="https://gezeqi.github.io/cn/cv/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://gezeqi.github.io/cv/"
-                />
-  </url><url>
     <loc>https://gezeqi.github.io/blogs/notice/</loc>
     <lastmod>2025-07-20T15:49:51+02:00</lastmod>
   </url><url>
