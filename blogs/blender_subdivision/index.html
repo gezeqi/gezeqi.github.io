@@ -1,0 +1,499 @@
+<!doctype html>
+<html
+  dir="ltr"
+  lang="en"
+  data-theme=""
+  
+    class="html theme--light"
+  
+><head>
+  <meta charset="utf-8" />
+  <title>
+    Zeqi Ge
+        |
+        Blender细分
+      
+
+    
+
+  </title>
+
+  <meta name="generator" content="Hugo 0.154.5"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="author" content="Zeqi Ge" />
+  <meta
+    name="description"
+    content=""
+  />
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/scss/main.min.3fdba24239c7ee87c048c879df89bf85b2b36be949863f3664d81926f6ee0b97.css"
+      integrity="sha256-P9uiQjnH7ofASMh534m/hbKza&#43;lJhj82ZNgZJvbuC5c="
+      crossorigin="anonymous"
+      type="text/css"
+    />
+  
+
+  
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.73ccfdf28df555e11009c13c20ced067af3cb021504cba43644c705930428b00.css"
+    integrity="sha256-c8z98o31VeEQCcE8IM7QZ688sCFQTLpDZExwWTBCiwA="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/fontawesome.min.137b1cf3cea9a8adb7884343a9a5ddddf4280f59153f74dc782fb7f7bf0d0519.css"
+    integrity="sha256-E3sc886pqK23iENDqaXd3fQoD1kVP3TceC&#43;3978NBRk="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/solid.min.e65dc5b48fb5f39b142360c57c3a215744c94e56c755c929cc3e88fe12aab4d3.css"
+    integrity="sha256-5l3FtI&#43;185sUI2DFfDohV0TJTlbHVckpzD6I/hKqtNM="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/regular.min.6f4f16d58da1c82c0c3a3436e021a3d39b4742f741192c546e73e947eacfd92f.css"
+    integrity="sha256-b08W1Y2hyCwMOjQ24CGj05tHQvdBGSxUbnPpR&#43;rP2S8="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/brands.min.e10425ad768bc98ff1fb272a0ac8420f9d1ba22f0612c08ff1010c95080ffe7e.css"
+    integrity="sha256-4QQlrXaLyY/x&#43;ycqCshCD50boi8GEsCP8QEMlQgP/n4="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+
+  <link rel="canonical" href="https://gezeqi.github.io/blogs/blender_subdivision/" />
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js"
+    integrity="sha256-&#43;RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI="
+    crossorigin="anonymous"
+  ></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.8724ddf9268dee451060f191961647573c7f592fbccc6d858746236b3f915813.js"
+      integrity="sha256-hyTd&#43;SaN7kUQYPGRlhZHVzx/WS&#43;8zG2Fh0Yjaz&#43;RWBM="
+      crossorigin="anonymous"
+    ></script>
+  
+
+  
+
+  
+
+  
+
+
+  
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Blender细分">
+  <meta name="twitter:description" content="打开Blender 打开Blender：打开后界面如下所示。 隐藏欢迎弹窗：按ESC键或任意单击弹窗外侧。 方法一：细分&#43;球面化 切换到编辑模式：确保选中当前模型，在左侧上方点击物体模式。 选择细分：在选中物体上点击右键并选择细分。 进入调整模式：按Shift&#43;Alt&#43;S即进入调整系数模式，鼠标指针变为如下形状。 增大系数：将鼠标向右不断拖动调大系数，将会产生球面化效果，完成后点击左键即可停止。 重复步骤2 3 4进行细分与球面化，直至满足要求。 方法二：使用添加器。 打开修改器：确保选中当前模型，在右侧下方面板点击修改器。 添加几何节点修改器：添加修改器—&gt;生成—&gt;表面细分。 调整层级：将鼠标向右不断拖动调大Catmull-Clark细分次数，直至满足要求。">
+
+
+
+  
+  <meta property="og:url" content="https://gezeqi.github.io/blogs/blender_subdivision/">
+  <meta property="og:site_name" content="My Website">
+  <meta property="og:title" content="Blender细分">
+  <meta property="og:description" content="打开Blender 打开Blender：打开后界面如下所示。 隐藏欢迎弹窗：按ESC键或任意单击弹窗外侧。 方法一：细分&#43;球面化 切换到编辑模式：确保选中当前模型，在左侧上方点击物体模式。 选择细分：在选中物体上点击右键并选择细分。 进入调整模式：按Shift&#43;Alt&#43;S即进入调整系数模式，鼠标指针变为如下形状。 增大系数：将鼠标向右不断拖动调大系数，将会产生球面化效果，完成后点击左键即可停止。 重复步骤2 3 4进行细分与球面化，直至满足要求。 方法二：使用添加器。 打开修改器：确保选中当前模型，在右侧下方面板点击修改器。 添加几何节点修改器：添加修改器—&gt;生成—&gt;表面细分。 调整层级：将鼠标向右不断拖动调大Catmull-Clark细分次数，直至满足要求。">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blogs">
+    <meta property="article:published_time" content="2025-07-20T14:51:26+02:00">
+    <meta property="article:modified_time" content="2025-07-20T14:51:26+02:00">
+    <meta property="article:tag" content="Blender">
+    <meta property="article:tag" content="Render">
+    <meta property="article:tag" content="Subdivision">
+
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "blogs",
+        "name": "Blender细分",
+        "headline": "Blender细分",
+        "alternativeHeadline": "",
+        "description": "
+      
+        \u003ch2 id=\u0022打开blender\u0022\u003e打开Blender\u003c\/h2\u003e\n\u003col\u003e\n\u003cli\u003e打开Blender：打开后界面如下所示。\u003c\/li\u003e\n\u003c\/ol\u003e\n\u003cp\u003e\u003cimg src=\u0022https:\/\/cdn.jsdelivr.net\/gh\/gezeqi\/Pictures@master\/uPic\/image-20251105111111745.png\u0022 alt=\u0022image-20251105111111745\u0022\u003e\u003c\/p\u003e\n\u003col start=\u00222\u0022\u003e\n\u003cli\u003e隐藏欢迎弹窗：按\u003ccode\u003eESC\u003c\/code\u003e键或任意单击弹窗外侧。\u003c\/li\u003e\n\u003c\/ol\u003e\n\u003cp\u003e\u003cimg src=\u0022https:\/\/cdn.jsdelivr.net\/gh\/gezeqi\/Pictures@master\/uPic\/image-20251105111134383.png\u0022 alt=\u0022image-20251105111134383\u0022\u003e\u003c\/p\u003e\n\u003ch2 id=\u0022方法一细分球面化\u0022\u003e方法一：细分\u002b球面化\u003c\/h2\u003e\n\u003col\u003e\n\u003cli\u003e切换到\u003ccode\u003e编辑模式\u003c\/code\u003e：确保选中当前模型，在左侧上方点击\u003ccode\u003e物体模式\u003c\/code\u003e。\u003c\/li\u003e\n\u003c\/ol\u003e\n\u003cp\u003e\u003cimg src=\u0022https:\/\/cdn.jsdelivr.net\/gh\/gezeqi\/Pictures@master\/uPic\/image-20260409213930664.png\u0022 alt=\u0022image-20260409213930664\u0022\u003e\u003c\/p\u003e\n\u003col start=\u00222\u0022\u003e\n\u003cli\u003e选择\u003ccode\u003e细分\u003c\/code\u003e：在选中物体上点击\u003ccode\u003e右键\u003c\/code\u003e并选择\u003ccode\u003e细分\u003c\/code\u003e。\u003c\/li\u003e\n\u003c\/ol\u003e\n\u003cp\u003e\u003cimg src=\u0022https:\/\/cdn.jsdelivr.net\/gh\/gezeqi\/Pictures@master\/uPic\/image-20260409214605967.png\u0022 alt=\u0022image-20260409214605967\u0022\u003e\u003c\/p\u003e\n\u003col start=\u00223\u0022\u003e\n\u003cli\u003e进入调整模式：按\u003ccode\u003eShift\u002bAlt\u002bS\u003c\/code\u003e即进入调整系数模式，鼠标指针变为如下形状。\u003c\/li\u003e\n\u003c\/ol\u003e\n\u003cp\u003e\u003cimg src=\u0022https:\/\/cdn.jsdelivr.net\/gh\/gezeqi\/Pictures@master\/uPic\/image-20260409214654931.png\u0022 alt=\u0022image-20260409214654931\u0022\u003e\u003c\/p\u003e\n\u003col start=\u00224\u0022\u003e\n\u003cli\u003e增大系数：将鼠标向右不断拖动调大系数，将会产生球面化效果，完成后点击左键即可停止。\u003c\/li\u003e\n\u003c\/ol\u003e\n\u003cp\u003e\u003cimg src=\u0022https:\/\/cdn.jsdelivr.net\/gh\/gezeqi\/Pictures@master\/uPic\/image-20260409214714094.png\u0022 alt=\u0022image-20260409214714094\u0022\u003e\u003c\/p\u003e\n\u003col start=\u00225\u0022\u003e\n\u003cli\u003e重复步骤2 3 4进行细分与球面化，直至满足要求。\u003c\/li\u003e\n\u003c\/ol\u003e\n\u003cp\u003e\u003cimg src=\u0022https:\/\/cdn.jsdelivr.net\/gh\/gezeqi\/Pictures@master\/uPic\/image-20260409214946663.png\u0022 alt=\u0022image-20260409214946663\u0022\u003e\u003c\/p\u003e\n\u003ch2 id=\u0022方法二使用添加器\u0022\u003e方法二：使用添加器。\u003c\/h2\u003e\n\u003col\u003e\n\u003cli\u003e打开\u003ccode\u003e修改器\u003c\/code\u003e：确保选中当前模型，在右侧下方面板点击\u003ccode\u003e修改器\u003c\/code\u003e。\u003c\/li\u003e\n\u003c\/ol\u003e\n\u003cp\u003e\u003cimg src=\u0022https:\/\/cdn.jsdelivr.net\/gh\/gezeqi\/Pictures@master\/uPic\/image-20251105112029999.png\u0022 alt=\u0022image-20251105112029999\u0022\u003e\u003c\/p\u003e\n\u003col start=\u00222\u0022\u003e\n\u003cli\u003e添加\u003ccode\u003e几何节点修改器\u003c\/code\u003e：\u003ccode\u003e添加修改器\u003c\/code\u003e\u0026mdash;\u0026gt;\u003ccode\u003e生成\u003c\/code\u003e\u0026mdash;\u0026gt;\u003ccode\u003e表面细分\u003c\/code\u003e。\u003c\/li\u003e\n\u003c\/ol\u003e\n\u003cp\u003e\u003cimg src=\u0022https:\/\/cdn.jsdelivr.net\/gh\/gezeqi\/Pictures@master\/uPic\/image-20260409215255017.png\u0022 alt=\u0022image-20260409215255017\u0022\u003e\u003c\/p\u003e\n\u003col start=\u00223\u0022\u003e\n\u003cli\u003e调整\u003ccode\u003e层级\u003c\/code\u003e：将鼠标向右不断拖动调大Catmull-Clark细分次数，直至满足要求。\u003c\/li\u003e\n\u003c\/ol\u003e\n\u003cp\u003e\u003cimg src=\u0022https:\/\/cdn.jsdelivr.net\/gh\/gezeqi\/Pictures@master\/uPic\/image-20260409215355437.png\u0022 alt=\u0022image-20260409215355437\u0022\u003e\u003c\/p\u003e
+
+
+      
+
+
+    ",
+        "license": "",
+        
+          
+          "copyrightYear": "2025",
+        
+        "inLanguage": "en",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/gezeqi.github.io\/blogs\/blender_subdivision\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "Zeqi Ge"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "Zeqi Ge"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "Zeqi Ge"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "Zeqi Ge"
+        },
+        "dateCreated": "2025-07-20T14:51:26.00Z",
+        "datePublished": "2025-07-20T14:51:26.00Z",
+        "dateModified": "2025-07-20T14:51:26.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": "Zeqi Ge",
+            "url": "https://gezeqi.github.io/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/gezeqi.github.io\/favicons\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+      ]
+
+    ,
+        "url" : "https:\/\/gezeqi.github.io\/blogs\/blender_subdivision\/",
+        "wordCount" : "15",
+        "genre" : [ ],
+        "keywords" : [ 
+      
+      "blender"
+
+    
+      
+        ,
+
+      
+      "render"
+
+    
+      
+        ,
+
+      
+      "subdivision"
+
+    ]
+    }
+  </script>
+
+
+</head>
+<body class="body">
+    <div class="wrapper">
+      <aside
+        
+          class="wrapper__sidebar"
+        
+      ><div class="sidebar
+    animated fadeInDown
+  ">
+  <div class="sidebar__content">
+      
+      <div style="
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        height:200px;
+      ">
+          <img src="/images/logo.svg" style="width:300px;">
+      </div>
+    <div class="sidebar__introduction">
+      <img class="sidebar__introduction-profileimage" src="/images/profile.jpg"
+        alt="profile picture" />
+      
+      <div class="sidebar__introduction-title">
+        <a href="/">Zeqi Ge (葛 泽麒)</a>
+      </div>
+      
+      <div class="sidebar__introduction-description">
+        <p></p>
+      </div>
+    </div>
+    <ul class="sidebar__list">
+      
+      <li class="sidebar__list-item">
+        <a href="mailto:ge051799qi@gmail.com" target="_blank" rel="noopener me" aria-label="e-mail"
+          title="e-mail">
+          <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+        </a>
+      </li>
+      
+      <li class="sidebar__list-item">
+        <a href="https://github.com/gezeqi" target="_blank" rel="noopener me" aria-label="GitHub"
+          title="GitHub">
+          <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+        </a>
+      </li>
+      
+      <li class="sidebar__list-item">
+        <a href="https://gitee.com/gezeqi" target="_blank" rel="noopener me" aria-label="Gitee"
+          title="Gitee">
+          <i class="fab fa-github-alt fa-2x" aria-hidden="true"></i>
+        </a>
+      </li>
+      
+      <li class="sidebar__list-item">
+        <a href="https://space.bilibili.com/479372308" target="_blank" rel="noopener me" aria-label="Bilibili"
+          title="Bilibili">
+          <i class="fab fa-bilibili fa-2x" aria-hidden="true"></i>
+        </a>
+      </li>
+      
+    </ul>
+  </div><footer class="footer footer__sidebar">
+  <div class="footer__center">
+    <a href="https://info.flagcounter.com/rg95">
+      <img
+        src="https://s01.flagcounter.com/count2/rg95/bg_FFCFEA/txt_B36060/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_1/pageviews_1/flags_0/percent_0/"
+        alt="Flag Counter" border="0">
+    </a>
+  </div>
+  <ul class="footer__list">
+    <li class="footer__item">
+      Last Updated: Aug 02, 2026
+    <li class="footer__item">
+      &copy;
+      
+      2025 - 2026
+      
+    </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.9531b4a2217a70c5a1fce89c1f81c9ebbdd586708fcd4130b417320c7230c8d6.js"
+    integrity="sha256-lTG0oiF6cMWh/OicH4HJ673VhnCPzUEwtBcyDHIwyNY="
+    crossorigin="anonymous"
+  ></script></div></aside>
+      <main
+        
+          class="wrapper__main"
+        
+      >
+        <header class="header"><div
+  class="
+    animated fadeInDown
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+  </a>
+  <nav class="nav">
+    <ul class="nav__list" id="navMenu">
+      
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/"
+              
+              title=""
+              >Home</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/portfolio/"
+              
+              title=""
+              >Publications</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/blogs/"
+              
+              title=""
+              >Blogs</a
+            >
+          </li>
+        
+
+      
+    </ul>
+    <ul class="nav__list nav__list--end">
+      
+      
+        <li class="nav__list-item">
+          <div class="themeswitch">
+            <a title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+        </li>
+      
+    </ul>
+  </nav>
+</div>
+</header>
+  <div
+    class="post 
+      animated fadeInDown
+    "
+  >
+    
+    <div class="post__content">
+      
+        <h1>Blender细分</h1>
+      
+      <h2 id="打开blender">打开Blender</h2>
+<ol>
+<li>打开Blender：打开后界面如下所示。</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20251105111111745.png" alt="image-20251105111111745"></p>
+<ol start="2">
+<li>隐藏欢迎弹窗：按<code>ESC</code>键或任意单击弹窗外侧。</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20251105111134383.png" alt="image-20251105111134383"></p>
+<h2 id="方法一细分球面化">方法一：细分+球面化</h2>
+<ol>
+<li>切换到<code>编辑模式</code>：确保选中当前模型，在左侧上方点击<code>物体模式</code>。</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20260409213930664.png" alt="image-20260409213930664"></p>
+<ol start="2">
+<li>选择<code>细分</code>：在选中物体上点击<code>右键</code>并选择<code>细分</code>。</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20260409214605967.png" alt="image-20260409214605967"></p>
+<ol start="3">
+<li>进入调整模式：按<code>Shift+Alt+S</code>即进入调整系数模式，鼠标指针变为如下形状。</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20260409214654931.png" alt="image-20260409214654931"></p>
+<ol start="4">
+<li>增大系数：将鼠标向右不断拖动调大系数，将会产生球面化效果，完成后点击左键即可停止。</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20260409214714094.png" alt="image-20260409214714094"></p>
+<ol start="5">
+<li>重复步骤2 3 4进行细分与球面化，直至满足要求。</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20260409214946663.png" alt="image-20260409214946663"></p>
+<h2 id="方法二使用添加器">方法二：使用添加器。</h2>
+<ol>
+<li>打开<code>修改器</code>：确保选中当前模型，在右侧下方面板点击<code>修改器</code>。</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20251105112029999.png" alt="image-20251105112029999"></p>
+<ol start="2">
+<li>添加<code>几何节点修改器</code>：<code>添加修改器</code>&mdash;&gt;<code>生成</code>&mdash;&gt;<code>表面细分</code>。</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20260409215255017.png" alt="image-20260409215255017"></p>
+<ol start="3">
+<li>调整<code>层级</code>：将鼠标向右不断拖动调大Catmull-Clark细分次数，直至满足要求。</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20260409215355437.png" alt="image-20260409215355437"></p>
+</div>
+    <div class="post__footer">
+      
+
+      
+        <span><a class="tag" href="/tags/blender/">blender</a><a class="tag" href="/tags/render/">render</a><a class="tag" href="/tags/subdivision/">subdivision</a></span>
+
+
+      
+    </div>
+
+    
+  </div>
+
+      </main>
+    </div><footer class="footer footer__base">
+  <div class="footer__center">
+    <a href="https://info.flagcounter.com/rg95">
+      <img
+        src="https://s01.flagcounter.com/count2/rg95/bg_FFCFEA/txt_B36060/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_1/pageviews_1/flags_0/percent_0/"
+        alt="Flag Counter" border="0">
+    </a>
+  </div>
+  <ul class="footer__list">
+    <li class="footer__item">
+      Last Updated: Aug 02, 2026
+    <li class="footer__item">
+      &copy;
+      
+      2025 - 2026
+      
+    </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.9531b4a2217a70c5a1fce89c1f81c9ebbdd586708fcd4130b417320c7230c8d6.js"
+    integrity="sha256-lTG0oiF6cMWh/OicH4HJ673VhnCPzUEwtBcyDHIwyNY="
+    crossorigin="anonymous"
+  ></script></body>
+</html>

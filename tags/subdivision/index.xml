@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Subdivision on My Website</title>
+    <link>https://gezeqi.github.io/tags/subdivision/</link>
+    <description>Recent content in Subdivision on My Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 20 Jul 2025 14:51:26 +0200</lastBuildDate><atom:link href="https://gezeqi.github.io/tags/subdivision/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blender细分</title>
+      <link>https://gezeqi.github.io/blogs/blender_subdivision/</link>
+      <pubDate>Sun, 20 Jul 2025 14:51:26 +0200</pubDate>
+      
+      <guid>https://gezeqi.github.io/blogs/blender_subdivision/</guid>
+      
+        <description>&lt;h2 id=&#34;打开blender&#34;&gt;打开Blender&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;打开Blender：打开后界面如下所示。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20251105111111745.png&#34; alt=&#34;image-20251105111111745&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;隐藏欢迎弹窗：按&lt;code&gt;ESC&lt;/code&gt;键或任意单击弹窗外侧。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20251105111134383.png&#34; alt=&#34;image-20251105111134383&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;方法一细分球面化&#34;&gt;方法一：细分+球面化&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;切换到&lt;code&gt;编辑模式&lt;/code&gt;：确保选中当前模型，在左侧上方点击&lt;code&gt;物体模式&lt;/code&gt;。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20260409213930664.png&#34; alt=&#34;image-20260409213930664&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;选择&lt;code&gt;细分&lt;/code&gt;：在选中物体上点击&lt;code&gt;右键&lt;/code&gt;并选择&lt;code&gt;细分&lt;/code&gt;。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20260409214605967.png&#34; alt=&#34;image-20260409214605967&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;进入调整模式：按&lt;code&gt;Shift+Alt+S&lt;/code&gt;即进入调整系数模式，鼠标指针变为如下形状。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20260409214654931.png&#34; alt=&#34;image-20260409214654931&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;增大系数：将鼠标向右不断拖动调大系数，将会产生球面化效果，完成后点击左键即可停止。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20260409214714094.png&#34; alt=&#34;image-20260409214714094&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;重复步骤2 3 4进行细分与球面化，直至满足要求。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20260409214946663.png&#34; alt=&#34;image-20260409214946663&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;方法二使用添加器&#34;&gt;方法二：使用添加器。&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;打开&lt;code&gt;修改器&lt;/code&gt;：确保选中当前模型，在右侧下方面板点击&lt;code&gt;修改器&lt;/code&gt;。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20251105112029999.png&#34; alt=&#34;image-20251105112029999&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;添加&lt;code&gt;几何节点修改器&lt;/code&gt;：&lt;code&gt;添加修改器&lt;/code&gt;&amp;mdash;&amp;gt;&lt;code&gt;生成&lt;/code&gt;&amp;mdash;&amp;gt;&lt;code&gt;表面细分&lt;/code&gt;。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20260409215255017.png&#34; alt=&#34;image-20260409215255017&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;调整&lt;code&gt;层级&lt;/code&gt;：将鼠标向右不断拖动调大Catmull-Clark细分次数，直至满足要求。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/gezeqi/Pictures@master/uPic/image-20260409215355437.png&#34; alt=&#34;image-20260409215355437&#34;&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>
